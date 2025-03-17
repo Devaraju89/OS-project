@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Secure File Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white p-6">
+    <h1 class="text-3xl font-bold">Welcome, <span id="user"></span>!</h1>
+
+    <!-- File Upload Form -->
+    <form id="uploadForm" class="mt-4">
+        <input type="file" id="fileUpload" class="p-2 bg-gray-800 rounded">
+        <button type="submit" class="bg-blue-500 p-2 rounded">Upload</button>
+    </form>
+
+    <!-- Display Uploaded Files -->
+    <div class="mt-6">
+        <h2 class="text-xl">Your Files:</h2>
+        <ul id="fileList" class="mt-2 bg-gray-800 p-4 rounded"></ul>
+    </div>
+
+    <script src="script.js"></script>
+    <a href="index.html">Back to Home</a>
+
+    
+</body>
+</html>
